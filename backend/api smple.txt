@@ -1,0 +1,7 @@
+http://localhost:3000/user/registration
+
+http://localhost:3000/user/login
+
+http://localhost:3000/user/logout/647738d9cfb6ba06cdbbf443
+
+http://localhost:3000/user/AllUsers
