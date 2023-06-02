@@ -9,6 +9,11 @@ const userRegistrationSchema = new mongoose.Schema(
     mobile: { type: String, require: true, trim: true },
     user_type: { type: String, enum: ["User", "Admin"], default: "User" },
     is_varified: { type: Number, status_code: [0, 1], default: 0 },
+    user_role: {
+      type: String,
+      enum: ["User", "Student", "Teacher"],
+      default: "User",
+    },
   },
   {
     timestamps: true,

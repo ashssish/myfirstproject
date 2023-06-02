@@ -3,7 +3,7 @@ const userRegistrationModel = require("../models/registrationModel");
 
 const registration = async (req, res) => {
   try {
-    const { name, username, email, password, mobile } = req.body;
+    const { name, username, email, password, mobile, role } = req.body;
 
     const Doc = new userRegistrationModel({
       name: name,
@@ -11,6 +11,7 @@ const registration = async (req, res) => {
       email: email,
       password: password,
       mobile: mobile,
+      user_role: role,
     });
     if (Doc) {
       const result = await Doc.save();
